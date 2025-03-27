@@ -1,12 +1,12 @@
 # TeronEsirClient
-Simple facade for .NET HttpClient covering all\* requests described in the [Teron ESIR API docs](https://api.teron.rs/#d23695c8-a874-44b4-b89b-7a867056d3c5) (also applicable to [OFS P5 EFU ESIR](https://api.ofs.ba/), since they are nearly identical).
+Simple facade for .NET HttpClient covering all\* requests described in the [Teron ESIR API docs](https://api.teron.rs/) (also applicable to [OFS P5 EFU ESIR](https://api.ofs.ba/), since they are nearly identical).
 
 Bug-reports and pull requests are welcome.
 
 \* *E-Faktura requests are currently not supported.*
 
 ## Installation
-Install the package [with NuGet]("https://link.to.nuget"):
+Install the package [with NuGet]("https://www.nuget.org/packages/TeronEsirClient/"):
 ```
 Install-Package TeronEsirClient
 ```
