@@ -1,4 +1,4 @@
-# TeronEsirApiClient
+# TeronEsirClient
 Simple facade for .NET HttpClient covering all\* requests described in the [Teron ESIR API docs](https://api.teron.rs/#d23695c8-a874-44b4-b89b-7a867056d3c5) (also applicable to [OFS P5 EFU ESIR](https://api.ofs.ba/), since they are nearly identical).
 
 Bug-reports and pull requests are welcome.
@@ -8,12 +8,12 @@ Bug-reports and pull requests are welcome.
 ## Installation
 Install the package [with NuGet]("https://link.to.nuget"):
 ```
-Install-Package TeronEsirApiClient
+Install-Package TeronEsirClient
 ```
 
 Or using the .NET CLI:
 ```
-dotnet add package TeronEsirApiClient
+dotnet add package TeronEsirClient
 ```
 
 ## Usage
