@@ -18,7 +18,7 @@ dotnet add package TeronEsirApiClient
 
 ## Usage
 A new instance of `TeronEsirApiClient` is created by passing it an instance of `HttpClient` via the constructor: 
-```
+```csharp
 TeronEsirApiClient client = new TeronEsirApiClient(myHttpClient);
 ```
 
