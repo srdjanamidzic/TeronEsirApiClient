@@ -25,7 +25,7 @@ TeronEsirApiClient client = new TeronEsirApiClient(myHttpClient);
 It us up to you to construct the `HttpClient` beforehand. Reading up on [Microsoft's best practices](https://learn.microsoft.com/en-us/dotnet/fundamentals/networking/http/httpclient-guidelines) for using the `HttpClient` is recommended.
 
 All of the methods return the result of type `TeronEsirResult`, or `TeronEsirResult<T>` if there is data that needs to be returned from the API. This type contains the following properties:
-```
+```csharp
  // Whether the operation was successful or not
  public bool IsSuccessful { get; } 
  
@@ -41,7 +41,7 @@ All of the methods return the result of type `TeronEsirResult`, or `TeronEsirRes
 
 ### Fiscalization request example
 Following is a fiscalization request example inside a ASP.NET 9 WebAPI controller:
-```
+```csharp
 [HttpPut("fiscalize")]
 public async Task<IActionResult> Fiscalize([FromServices] IHttpClientFactory httpClientFactory)
 {
