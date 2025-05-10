@@ -54,6 +54,6 @@ namespace TeronEsirClient.Models.Fiscalization.Write
         public string AdvanceLastInvoiceNumber { get; set; }
 
         [JsonProperty(NullValueHandling = NullValueHandling.Ignore)]
-        public DateTime AdvanceLastInvoiceDateTime { get; set; }
+        public DateTime? AdvanceLastInvoiceDateTime { get; set; }
     }
 }
