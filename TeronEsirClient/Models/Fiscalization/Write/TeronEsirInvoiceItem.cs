@@ -15,7 +15,11 @@ namespace TeronEsirClient.Models.Fiscalization.Write
         public decimal UnitPrice { get; set; }
         public decimal Quantity { get; set; }
         public decimal TotalAmount { get; set; }
+
+        [JsonProperty(NullValueHandling = NullValueHandling.Ignore)]
         public decimal? Discount { get; set; }
+
+        [JsonProperty(NullValueHandling = NullValueHandling.Ignore)]
         public decimal? DiscountAmount { get; set; }
     }
 }
