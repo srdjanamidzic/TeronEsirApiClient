@@ -8,21 +8,30 @@ namespace TeronEsirClient.Models.Fiscalization.Write
     public sealed class TeronEsirInvoice
     {
         public TeronEsirInvoiceRequest InvoiceRequest { get; set; }
-        public bool Print { get; set; }
-        public string Email { get; set; }
-        public bool RenderReceiptImage { get; set; }
 
+        [JsonProperty(NullValueHandling = NullValueHandling.Ignore)]
+        public bool? Print { get; set; }
+
+        [JsonProperty(NullValueHandling = NullValueHandling.Ignore)]
+        public string Email { get; set; }
+
+        [JsonProperty(NullValueHandling = NullValueHandling.Ignore)]
+        public bool? RenderReceiptImage { get; set; }
+
+        [JsonProperty(NullValueHandling = NullValueHandling.Ignore)]
         [JsonConverter(typeof(EnumStringConverter<ReceiptLayout>))]
-        public ReceiptLayout ReceiptLayout { get; set; }
+        public ReceiptLayout? ReceiptLayout { get; set; }
 
         [JsonProperty(NullValueHandling = NullValueHandling.Ignore)]
         [JsonConverter(typeof(EnumStringConverter<ReceiptImageFormat>))]
         public ReceiptImageFormat? ReceiptImageFormat { get; set; }
+
+        [JsonProperty(NullValueHandling = NullValueHandling.Ignore)]
         public string PrinterName { get; set; }
 
         [JsonProperty(NullValueHandling = NullValueHandling.Ignore)]
         [JsonConverter(typeof(EnumStringConverter<PrinterType>))]
-        public PrinterType PrinterType { get; set; }
+        public PrinterType? PrinterType { get; set; }
 
         [JsonProperty(NullValueHandling = NullValueHandling.Ignore)]
         [JsonConverter(typeof(ByteArrayBase64Converter))]
