@@ -14,9 +14,11 @@ namespace TeronEsirClient.Models.Fiscalization.Write
         public DateTime? ToDate { get; set; }
 
         [JsonProperty(NullValueHandling = NullValueHandling.Ignore)]
+        [JsonConverter(typeof(MoneyDecimalConverter))]
         public decimal? AmountFrom { get; set; }
 
         [JsonProperty(NullValueHandling = NullValueHandling.Ignore)]
+        [JsonConverter(typeof(MoneyDecimalConverter))]
         public decimal? AmountTo { get; set; }
 
         [JsonProperty(NullValueHandling = NullValueHandling.Ignore, ItemConverterType = typeof(EnumStringConverter<InvoiceType>))]

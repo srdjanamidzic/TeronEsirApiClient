@@ -48,9 +48,11 @@ namespace TeronEsirClient.Models.Fiscalization.Write
         public string[] ReceiptFooterTextLines { get; set; }
 
         [JsonProperty(NullValueHandling = NullValueHandling.Ignore)]
+        [JsonConverter(typeof(MoneyDecimalConverter))]
         public decimal? AdvancePaid { get; set; }
 
         [JsonProperty(NullValueHandling = NullValueHandling.Ignore)]
+        [JsonConverter(typeof(MoneyDecimalConverter))]
         public decimal? AdvanceTax { get; set; }
 
         [JsonProperty(NullValueHandling = NullValueHandling.Ignore)]

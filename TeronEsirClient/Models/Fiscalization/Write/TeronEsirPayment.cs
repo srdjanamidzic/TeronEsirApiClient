@@ -8,6 +8,8 @@ namespace TeronEsirClient.Models.Fiscalization.Write
     {
         [JsonConverter(typeof(EnumStringConverter<PaymentType>))]
         public PaymentType PaymentType { get; set; }
+
+        [JsonConverter(typeof(MoneyDecimalConverter))]
         public decimal Amount { get; set; }
     }
 }
